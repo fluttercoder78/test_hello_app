@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                      height: MediaQuery.of(context).size.height,
                      width: MediaQuery.of(context).size.width,
                      child:Center (
-                         child: Text("Привет", style: Theme.of(context).textTheme.display1,),
+                         child: Text("Hey there", style: Theme.of(context).textTheme.display1,),
                      ),
                      color: _backgroundColor,
                  ),
