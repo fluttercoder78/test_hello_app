@@ -33,12 +33,13 @@ class _MyHomePageState extends State<MyHomePage> {
     Color _backgroundColor = Colors.white;
     void _colorChange()
     {
+        int min = 0;
+        int max = 0xFFFFFFFF;
+        Random random = new Random();
+        int randomValue = min + random.nextInt(max - min);
+        Color backgroundColor = Color(randomValue);
         setState(() {
-            int min = 0;
-            int max = 0xFFFFFFFF;
-            Random random = new Random();
-            int randomValue = min + random.nextInt(max - min);
-            _backgroundColor = Color(randomValue);
+            _backgroundColor = backgroundColor;
         });
     }
 
